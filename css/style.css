@@ -4,8 +4,7 @@
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-
-body {
+.container {
   padding: 0 40px;
 }
 header {
@@ -60,9 +59,16 @@ nav ul li a:hover{
 
 .apresentation {
   display: flex;
-} 
+  gap: 20px;
+}
+.apresentation-img {
+  width: 50%;
+}
+.apresentation-img img{
+  width: 100%;
+}
 .apresentation-text {
-  margin-left: 25px;
+  width: 50%;
   padding-left: 20px;
 }
 .apresentation-text h1 {
@@ -96,7 +102,7 @@ section {
 }
 .card {
   width: 25%;
-  height: 520px;
+  height: 400px;
   background-color: #BC1A6E;
   border-radius: 20px 20px 20px 20px;
 }
@@ -112,7 +118,7 @@ section {
 }
 .card p {
   color: #ffffff;
-  font-size: 32px;
+  font-size: 1.3em;
   font-weight: bold;
   margin-left: 36px;
 }
@@ -134,14 +140,10 @@ section {
 .card-adventure img{
   width: 100%;
   height: 100%;
-  transition: opacity 0.4s ease;
-}
-.card-adventure img:hover{
-  opacity: .9;
 }
 .card-adventure p {
   color: #ffffff;
-  font-size: 32px;
+  font-size: 28px;
   font-weight: bold;
   position: absolute;
   bottom: 60px;
@@ -167,7 +169,7 @@ section {
 .card-plan {
   position: relative;
   width: 420px;
-  height: 700px;
+  height: 500px;
   background-color: #F1F1F1;
   border: 4px solid #ffff;
   border-radius: 20px;
@@ -208,7 +210,7 @@ section {
 .vip-card {
   background-color: #A18CD1;
   width: 500px;
-  height: 700px;
+  height: 500px;
   border: 4px solid #ffff;
   border-radius: 20px;
   text-align: center;
@@ -225,8 +227,174 @@ section {
   border: none;
   background-color: #fff;
   color: #3685FB;
-  width: 380px;
-  height: 86px;
+  width: 80%;
+  height: 60px;
   border-radius: 15px;
   margin: 0 auto;
+  cursor: pointer;
+}
+
+
+.depoiments {
+  position: relative;
+  margin-top: 60px;
+  height: 1052px;
+}
+.depoiments p {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.depoiments p + p {
+  max-width: 500px;
+  color: #898989;
+}
+.clientimg-1, .clientimg-2, .clientimg-3, .clientimg-4 {
+  width: 24%;
+}
+.clientimg-1 img, .clientimg-2 img, .clientimg-3 img, .clientimg-4 img{
+  width: 100%;
+  height: 100%;
+}
+.clientimg-1 {
+  position: absolute;
+  bottom: 240px;
+}
+.clientimg-2 {
+  position: absolute;
+  bottom: 340px;
+  left: 25%;
+}
+.clientimg-3 {
+  position: absolute;
+  bottom: 440px;
+  left: 50%;
+}
+.clientimg-4 {
+  position: absolute;
+  bottom: 540px;
+  left: 75%;
+}
+.depoiment-client {
+  position: absolute;
+  bottom: 100px;
+  right: 100px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width:50% ;
+  height: 152px;
+  box-shadow: 0 20px 40px #22222279;
+  border-radius: 15px;
+  padding: 33px 30px;
+  font-size: 20px;
+  text-align: center;
+  color: #222222c4;
+}
+
+.newsletter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 410px;
+  padding-top: 80px;
+  background-image: url('../img/fundo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: center;
+}
+.newsletter p {
+  font-size: 36px;
+  font-weight: bold;
+  max-width: 620px;
+  margin-bottom: 60px;
+}
+
+.input-field{
+  display: flex;
+  height: 100px;
+  width: 700px;
+  background-color: #fff;
+  padding: 16px 18px;
+  border: 4px solid #AAAAAA;
+  border-radius: 12px;
+}
+.input-field input {
+  width: 70%;
+  border: none;
+  outline: 0;
+  padding-left: 50px;
+  font-size: 24px;
+}
+.input-field input::placeholder {
+  font-size: 24px;
+  font-weight: bold;
+  color: #aaa;
+}
+.input-field button {
+  width: 260px;
+  background-color: #3685FB;
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+}
+.input-field button:hover {
+  background-color: #286fda;
+}
+.footer-content {
+  display: flex;
+  padding: 60px 40px;
+}
+.footer-content div {
+  width: 25%;
+}
+.footer-content-title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 27px;
+  margin-bottom: 60px;
+}
+.footer-content ul {
+  list-style: none;
+}
+.footer-content li + li {
+  margin-top: 40px;
+}
+.footer-content li a {
+  text-decoration: none;
+  color: #000000b9;
+}
+.footer-content li a:hover {
+  color: #000000;
+}
+
+.footer-content div:last-child p{
+  color: #00000098;
+  margin-top: 40px;
+}
+.social {
+  padding-top: 20px;
+  display: flex;
+  gap: 40px;
+}
+
+.footer-extra::before {
+  content: '';
+  display: block;
+  width: 90%;
+  height: 1px;
+  background-color: #4b4b4b9c;
+  margin: 0 auto;
+}
+.footer-extra ul{
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding-top: 20px;
+  margin-left: 60px;
+}
+.footer-extra a{
+  text-decoration: none;
+  color: #000000b9;
 }
