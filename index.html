@@ -4,22 +4,15 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <title>Nature Tour</title>
 </head>
 <body>
   <div class="container">
-
-    <header>
-      <nav class="nav-mobile">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Experiências</a></li>
-          <li><a href="#">Pacotes</a></li>
-          <li><a href="#">Contato</a></li>
-          <li><a href="#">Blog</a></li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div onclick="openAndClose()" class="menu-mobile-icon">
+        <img id="menu-mobile-img" src="img/cardapio.png" alt="botao para abrir e fechar menu">
+      </div>
       <div class="logo">
         <a href="">
           <img src="img/Logo.svg" alt="logo nature">
@@ -37,14 +30,23 @@
         </ul>
       </nav>
     </header>
-  
+    <nav class="nav-mobile">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Sobre</a></li>
+        <li><a href="#">Experiências</a></li>
+        <li><a href="#">Pacotes</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Blog</a></li>
+      </ul>
+    </nav>
     <section class="apresentation">
       <div class="apresentation-img">
         <img src="img/lands.png" alt="paisagens">
       </div>
    
       <div class="apresentation-text">
-        <h1>Vamos aproveitar suas férias com <img src="img/Logo.svg" alt="nature"></h1>
+        <h1 class="animate__animated animate__backInRight animate__slower">Vamos aproveitar suas férias com <img src="img/Logo.svg" alt="nature"></h1>
         <p>Esta planejando umas férias para desfrutar do seu tempo livre? Procurando um lugar 
           para explorar, comer e curtir suas férias com seus entes queridos 
           ou você é um viajante individual que viaja frequentemente para experiências maravilhosas.
@@ -156,13 +158,13 @@
         </div>
       </div>
   
-      <div class="depoiment-client">
-        <img src="img/profilepic.png" alt="pessoa">
-        <p>“ Ótimo lugar para passar suas férias enquanto explora diferentes experiências. “</p>
+      <div class="depoiment-client animate__animated animate__zoomIn animate__delay-3s animate__infinite">
+        <img class="depoimentpic" src="img/profilepic.png" alt="pessoa">
+        <p class="depoiment-text">“ Ótimo lugar para passar suas férias enquanto explora diferentes experiências. “</p>
       </div>
-      <div class="depoiment-client-mobile">
-        <img src="img/profilepic.png" alt="pessoa">
-        <p>“ Ótimo lugar para passar suas férias enquanto explora diferentes experiências. “</p>
+      <div class="depoiment-client-mobile animate__animated animate__zoomIn animate__delay-3s animate__infinite">
+        <img class="depoimentpic"src="img/profilepic.png" alt="pessoa">
+        <p class="depoiment-text">“ Ótimo lugar para passar suas férias enquanto explora diferentes experiências. “</p>
       </div>
     </section>
   </div>
@@ -231,15 +233,7 @@
         </div>
       </div>
     </div>
-   
-    <div class="footer-extra">
-      <ul>
-        <li>© 2022 Nature, Inc.</li>
-        <li><a href="#">Privacidade</a></li>
-        <li><a href="#">Termos</a></li>
-        <li><a href="#">Sitemap</a></li>
-      </ul>
-    </div>
   </footer>
+  <script src="js/bundle.js"></script>
 </body>
 </html>
