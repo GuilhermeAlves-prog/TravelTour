@@ -468,6 +468,7 @@ section {
   }
   .experiences-cards {
     flex-direction: column;
+    margin-bottom: 20px;
   }
   .card {
     width: 100%;
