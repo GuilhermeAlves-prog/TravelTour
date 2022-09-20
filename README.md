@@ -6,6 +6,7 @@ esse site foi construido com :
 - CSS
 - Javascript
 #
+acesse: https://guilhermealves-prog.github.io/TravelTour/
 ## preview
 ![Screenshot 2022-09-19 at 21-02-38 Nature Tour](https://user-images.githubusercontent.com/70963422/191139644-a6f29d9c-aefe-47fb-afb0-ea86208dc48a.png)
 #
