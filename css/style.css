@@ -137,6 +137,12 @@ section {
   height: 400px;
   background-color: #BC1A6E;
   border-radius: 20px 20px 20px 20px;
+  transition: all 200ms ease-in;
+
+}
+.card:hover {
+  transform: rotate(360deg);
+  transition: all 1s ease-in;
 }
 .card:nth-child(2) {
   background-color: #CC2D4A;
