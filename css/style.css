@@ -73,7 +73,7 @@ nav ul li a:hover{
 }
 .btn:hover {
   color: white;
-  background-color: #2d77e6;
+  background-color: #062f6e;
 }
 .btn-blue {
   background-color: #3685FB;
@@ -86,7 +86,7 @@ nav ul li a:hover{
 }
 .btn-blue:hover {
   color: white;
-  background-color: #2d77e6;
+  background-color: #062f6e;
 }
 
 .apresentation {
@@ -243,7 +243,7 @@ section {
   transition: all 0.2s ease;
 }
 .btn-cta:hover {
-  background-color: #2d77e6;
+  background-color: #062f6e;
 }
 .vip-card {
   background-color: #A18CD1;
@@ -385,7 +385,7 @@ section {
   font-weight: 600;
 }
 .input-field button:hover {
-  background-color: #286fda;
+  background-color: #062f6e;
 }
 .footer-content {
   display: flex;
