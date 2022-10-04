@@ -3,6 +3,7 @@ o site <b>Nature</b> simula um site que oferece serviços de viagem e hospedagem
 
 ## Tecnologias
 esse site foi construido com :
+- HTML
 - CSS
 - Javascript
 #
